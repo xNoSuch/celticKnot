@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="700" style="border:1px solid">
+</canvas>
+
+<script>
+
+// Start K
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+ctx.globalAlpha = 0.5;
+ctx.fillStyle = "#000000";
+ctx.strokeStyle = "red";
+
+// Rotate square
+ctx.save();
+ctx.translate(233, -189);
+ctx.rotate(45 * Math.PI/180);
+
+// Draw square
+ctx.fillRect(333, 175, 15, 15);
+
+// Fix rotation
+ctx.restore();
+
+// Draw vertical line
+ctx.lineTo(344.5, 360);
+ctx.lineTo(344.5, 100);
+ctx.stroke();
+// End K
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="700" style="border:1px solid">
+</canvas>
+
+<script>
+
+// Start K
+const c = document.getElementById("myCanvas");
+const ctx = c.getContext("2d");
+
+ctx.strokeStyle = "red";
+ctx.fillStyle = "#AAAAAA";
+
+ctx.beginPath();
+ctx.moveTo(333.33, 600);
+
+ctx.lineTo(333.33, 175);
+ctx.lineTo(323.33, 165);
+ctx.lineTo(333.33, 155);
+ctx.lineTo(343.33, 165);
+ctx.lineTo(333.33, 175);
+
+ctx.lineTo(333.33, 100);
+ctx.stroke();
+ctx.fill();
+// End K
+
+</script>
+
+</body>
+</html>
