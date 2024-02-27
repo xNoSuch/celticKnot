@@ -10,21 +10,19 @@
 const c = document.getElementById("myCanvas");
 const ctx = c.getContext("2d");
 
-ctx.strokeStyle = "red";
+ctx.strokeStyle = "black";
 ctx.fillStyle = "#AAAAAA";
 
 ctx.beginPath();
-ctx.moveTo(333.33, 600);
 
-ctx.lineTo(333.33, 175);
-ctx.lineTo(323.33, 165);
-ctx.lineTo(333.33, 155);
-ctx.lineTo(343.33, 165);
-ctx.lineTo(333.33, 175);
+ctx.moveTo(310, 195);
 
-ctx.lineTo(333.33, 100);
+ctx.lineTo(323, 208); // Bottom-left
+ctx.lineTo(334, 196); // Bottom-right
+ctx.lineTo(322, 183); // Top-right
+ctx.lineTo(310, 195); // Top-left
+
 ctx.stroke();
-ctx.fill();
 // End K
 
 </script>
